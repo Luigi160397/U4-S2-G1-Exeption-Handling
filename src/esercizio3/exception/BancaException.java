@@ -1,12 +1,17 @@
 package esercizio3.exception;
 
 public class BancaException extends Exception {
+
+	String message;
+
 	public BancaException(String message) {
 		super(message);
-		toString(message);
+		this.message = message;
+
 	}
 
-	public String toString(String str) {
-		return str;
+	@Override
+	public String toString() {
+		return this.message;
 	}
 }
