@@ -12,7 +12,7 @@ public class Main1 {
 		Random r = new Random();
 		int[] numCasuali = new int[5];
 		for (int i = 0; i < numCasuali.length; i++) {
-			numCasuali[i] = r.nextInt(11);
+			numCasuali[i] = r.nextInt(1, 11);
 		}
 		Scanner scan = new Scanner(System.in);
 		int exit = -1;
